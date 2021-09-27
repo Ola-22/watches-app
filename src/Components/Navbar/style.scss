@@ -1,0 +1,39 @@
+@import "../../styles/main";
+@import "../../styles/variables";
+
+.nav-main{
+  @extend .flexBox;
+  margin-top: 42px;
+  & > nav{
+   width: 445px;
+   height: 34px;
+   & >a{
+      color: $blackColor;
+      letter-spacing: 0.02em;
+      font-size: 20px;
+      &:not(:first-of-type){
+        margin-inline-start: 40px;
+      }
+   }
+  
+
+  }
+}
+
+.nav-box{
+  @extend .flexBox;
+  &>div{
+    display: flex;
+    @extend .flexBox;
+    & >img{
+      height: 24px;
+      margin-inline-start: 40px;
+      margin-inline-end: 8px;
+    }
+  }
+
+  & img:not(:first-of-type){
+    height: 24px;
+    margin-inline-start: 40px;
+  }
+}
