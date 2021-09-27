@@ -1,0 +1,53 @@
+.flexBox, .nav-main, .nav-box, .nav-box > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-main {
+  margin-top: 42px;
+}
+
+.nav-main > nav {
+  width: 445px;
+  height: 34px;
+}
+
+.nav-main > nav > a {
+  color: #333333;
+  letter-spacing: 0.02em;
+  font-size: 20px;
+}
+
+.nav-main > nav > a:not(:first-of-type) {
+  -webkit-margin-start: 40px;
+          margin-inline-start: 40px;
+}
+
+.nav-box > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-box > div > img {
+  height: 24px;
+  -webkit-margin-start: 40px;
+          margin-inline-start: 40px;
+  -webkit-margin-end: 8px;
+          margin-inline-end: 8px;
+}
+
+.nav-box img:not(:first-of-type) {
+  height: 24px;
+  -webkit-margin-start: 40px;
+          margin-inline-start: 40px;
+}
+/*# sourceMappingURL=style.css.map */
