@@ -12,7 +12,7 @@
 }
 
 .nav-main {
-  margin-top: 42px;
+  padding-top: 42px;
 }
 
 .nav-main > nav {
@@ -45,9 +45,27 @@
           margin-inline-end: 8px;
 }
 
-.nav-box img:not(:first-of-type) {
+.nav-box > div h6 {
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.nav-box > div:last-of-type {
+  background: #F1DDC9;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 40px;
+}
+
+.nav-box > div:last-of-type img {
   height: 24px;
   -webkit-margin-start: 40px;
           margin-inline-start: 40px;
+  position: absolute;
+  right: 3px;
 }
 /*# sourceMappingURL=style.css.map */
