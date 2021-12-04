@@ -1,0 +1,55 @@
+.flexBox, .main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+.main-section {
+  margin-top: 211px;
+  margin-bottom: 92px;
+}
+
+.main-section > div {
+  width: 540px;
+  height: 270px;
+  background: #ffffff;
+  padding: 32px;
+}
+
+.main-section > div > h4 {
+  font-weight: normal;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  color: #333333;
+}
+
+.main-section > div > p {
+  font-size: 16px;
+  width: 345px;
+  height: 50px;
+  color: #777777;
+  letter-spacing: 0.03em;
+  margin-bottom: 4px;
+}
+
+.main-section > div > a {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #333333;
+  border-bottom: 1px solid #333333;
+}
+
+.main-section > div > img {
+  float: right;
+  margin-top: -15px;
+}
+/*# sourceMappingURL=style.css.map */
