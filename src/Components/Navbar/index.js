@@ -18,7 +18,9 @@ export default function Navbar() {
           <img src="/images/user.png" alt="" />
           <h6>Log In</h6>
         </div>
-        <img src="/images/cart.png" alt="" />
+        <div>
+          <img src="/images/cart.png" alt="" />
+        </div>
       </div>
     </div>
   );

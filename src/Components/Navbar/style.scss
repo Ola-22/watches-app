@@ -3,7 +3,7 @@
 
 .nav-main{
   @extend .flexBox;
-  margin-top: 42px;
+  padding-top: 42px;
   & > nav{
    width: 445px;
    height: 34px;
@@ -30,10 +30,29 @@
       margin-inline-start: 40px;
       margin-inline-end: 8px;
     }
+
+    & h6{
+      letter-spacing: 0.02em;
+      color: $blackColor;
+      font-size: 18px;
+      font-weight: normal;
+    }
   }
 
-  & img:not(:first-of-type){
+  & >div:last-of-type{
+    background: $pinkColor;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 40px;
+    & img{
     height: 24px;
     margin-inline-start: 40px;
+    position: absolute;
+    right: 3px;
   }
+  }
+
+  
 }
