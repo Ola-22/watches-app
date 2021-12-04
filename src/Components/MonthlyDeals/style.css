@@ -1,0 +1,63 @@
+.flexBox, .deals-main .main-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-section {
+  font-size: 36px;
+  font-weight: 500;
+  color: #333333;
+  letter-spacing: 0.02em;
+  margin-bottom: 68px;
+  margin-left: 64px;
+}
+
+.title-section:after {
+  content: '';
+  border-bottom: 1px solid #333333;
+  width: 120px;
+  display: block;
+}
+
+.deals-main .monthly-card {
+  position: relative;
+}
+
+.deals-main .monthly-card > div:first-of-type > h2 {
+  font-weight: 500;
+  color: #333333;
+}
+
+.deals-main .monthly-card > div:first-of-type > h2:last-of-type {
+  font-weight: normal;
+}
+
+.deals-main .monthly-card > div:first-of-type > h4 {
+  color: #777777;
+  font-weight: normal;
+  position: relative;
+}
+
+.deals-main .monthly-card > div:first-of-type > h4:last-of-type:after {
+  content: '';
+  border: 1px solid #D93F3F;
+  width: 100px;
+  color: #D93F3F;
+  display: block;
+  position: absolute;
+  top: 12px;
+  height: 0px;
+}
+
+.deals-main .monthly-card .card-hover {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
