@@ -1,0 +1,44 @@
+@import "../../styles/main";
+@import "../../styles/variables";
+
+.deals-main{
+  & h1{
+
+  }
+  .main-card{
+  @extend .flexBox;
+  }
+  .monthly-card{
+    position: relative;
+    & > img{
+
+    }
+    & >div:first-of-type{
+      & > h2{
+        font-weight: 500;
+        color: $blackColor;
+        &:last-of-type{
+          font-weight: normal;
+        }
+      }
+      & > h4{
+        color: $greyColor;
+        font-weight: normal;
+        position: relative;
+        &:last-of-type:after{
+            content: '';
+            border: 1px solid #D93F3F;
+            width: 100px;
+            color: #D93F3F;
+            display: block;
+            position: absolute;
+            top: 12px;
+            height: 0px;
+        }
+      }
+    }
+    .card-hover{
+      display: none;
+    }
+  }
+}
