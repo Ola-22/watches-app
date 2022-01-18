@@ -31,6 +31,14 @@
   letter-spacing: 0.02em;
 }
 
+.recent-news .left-news > button:hover {
+  color: #ffffff;
+  background-color: #D84727;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
 .recent-news .right-news {
   display: -webkit-box;
   display: -ms-flexbox;
