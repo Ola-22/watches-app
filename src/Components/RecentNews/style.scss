@@ -29,6 +29,13 @@
       height: 58px;
       font-size: 16px;
       letter-spacing: 0.02em;
+
+      &:hover{
+        color: $whiteColor;
+        background-color: $orangeColor;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+      }
     }
   }
 
