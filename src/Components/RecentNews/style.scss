@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+
+.recent-news{
+  display: flex;
+  margin-left: 64px;
+  flex-wrap: wrap;
+
+  .left-news{
+
+    & > h6{
+      letter-spacing: 0.02em;
+      color: $greyColor;
+      font-size: 20px;
+    }
+
+    & > h4{
+      letter-spacing: 0.02em;
+      color: $blackColor;
+      font-size: 36px;
+      margin-top: 8px;
+      width: 350px;
+    }
+
+    & > button{
+      margin-top: 45px;
+      color: $orangeColor;
+      border: 2px solid $orangeColor;
+      width: 160px;
+      height: 58px;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+  }
+
+
+  .right-news{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    margin-left: 75px;
+
+    & > img:last-of-type{
+      position: absolute;
+      left: 220px;
+      z-index: -1;
+      bottom: 69px;
+    }
+  }
+}

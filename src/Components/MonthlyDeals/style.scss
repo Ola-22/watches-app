@@ -2,17 +2,13 @@
 @import "../../styles/variables";
 
 .deals-main{
-  & h1{
-
-  }
+  margin-bottom: 92px;
   .main-card{
   @extend .flexBox;
   }
   .monthly-card{
     position: relative;
-    & > img{
-
-    }
+  
     & >div:first-of-type{
       & > h2{
         font-weight: 500;
