@@ -1,0 +1,49 @@
+.recent-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 64px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.recent-news .left-news > h6 {
+  letter-spacing: 0.02em;
+  color: #777777;
+  font-size: 20px;
+}
+
+.recent-news .left-news > h4 {
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-size: 36px;
+  margin-top: 8px;
+  width: 350px;
+}
+
+.recent-news .left-news > button {
+  margin-top: 45px;
+  color: #D84727;
+  border: 2px solid #D84727;
+  width: 160px;
+  height: 58px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+.recent-news .right-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  margin-left: 75px;
+}
+
+.recent-news .right-news > img:last-of-type {
+  position: absolute;
+  left: 220px;
+  z-index: -1;
+  bottom: 69px;
+}
+/*# sourceMappingURL=style.css.map */
