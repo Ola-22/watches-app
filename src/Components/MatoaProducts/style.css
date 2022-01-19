@@ -1,0 +1,28 @@
+.nav-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav-tabs > li {
+  margin-right: 120px;
+}
+
+.nav-tabs > li > a {
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  color: #333333;
+  letter-spacing: 0.02em;
+  font-family: Taviraj;
+  cursor: pointer;
+}
+
+.nav-tabs > li > a:after {
+  content: '';
+  border-bottom: 1px solid #333333;
+  width: 62px;
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

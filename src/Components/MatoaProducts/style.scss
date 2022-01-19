@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.nav-tabs{
+  display: flex;
+  justify-content: space-around;
+  & > li{
+    margin-right: 120px;
+    & > a{
+      font-size: 36px;
+      letter-spacing: 0.02em;
+      color: $blackColor;
+      letter-spacing: 0.02em;
+      font-family: Taviraj;
+      cursor: pointer;
+      &:after{
+        content: '';
+        border-bottom: 1px solid #333333;
+        width: 62px;
+        display: block;
+      }
+    }
+  }
+}
