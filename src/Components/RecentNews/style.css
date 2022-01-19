@@ -5,6 +5,7 @@
   margin-left: 64px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 92px;
 }
 
 .recent-news .left-news > h6 {
