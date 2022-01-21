@@ -1,9 +1,53 @@
+.flexBox, .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-section {
+  font-size: 36px;
+  font-weight: 500;
+  color: #333333;
+  letter-spacing: 0.02em;
+  margin-bottom: 68px;
+  margin-left: 64px;
+}
+
+.title-section:after {
+  content: '';
+  border-bottom: 1px solid #333333;
+  width: 120px;
+  display: block;
+}
+
+#button, .btn {
+  letter-spacing: 0.03em;
+  color: #D84727;
+  cursor: pointer;
+}
+
+#button:hover, .btn:hover {
+  background-color: #D84727;
+  color: #ffffff;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
 .nav-tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .nav-tabs > li {
@@ -24,5 +68,78 @@
   border-bottom: 1px solid #333333;
   width: 62px;
   display: block;
+}
+
+.tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tab .tab-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 60px;
+  margin-left: 35px;
+  width: 345px;
+}
+
+.tab .tab-container > div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 24px;
+  width: 131px;
+}
+
+.tab .tab-container > div:first-of-type > img:first-of-type {
+  z-index: 2;
+}
+
+.tab .tab-container > div:first-of-type > img:last-of-type {
+  position: absolute;
+  z-index: 1;
+}
+
+.tab .tab-container h6 {
+  font-size: 24px;
+  color: #333333;
+  font-weight: 400;
+  width: 190px;
+  letter-spacing: 0.02em;
+}
+
+.tab .tab-container h5 {
+  font-size: 28px;
+  color: #222222;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.btn {
+  width: 272px;
+  height: 66px;
+  border: 1px solid #D84727;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin-top: 55px;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

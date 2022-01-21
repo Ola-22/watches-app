@@ -21,7 +21,6 @@
 .nav-box{
   @extend .flexBox;
   &>div{
-    display: flex;
     @extend .flexBox;
     & >img{
       height: 24px;

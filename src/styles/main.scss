@@ -1,3 +1,5 @@
+@import "./variables";
+
 .flexBox{
   display: flex;
   justify-content: space-around;
@@ -8,14 +10,26 @@
 .title-section{
   font-size: 36px;
   font-weight: 500;
-  color: #333333;
+  color: $blackColor;
   letter-spacing: 0.02em;
   margin-bottom: 68px;
   margin-left: 64px;
   &:after{
     content: '';
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid $blackColor;
     width: 120px;
     display: block;
+  }
+}
+
+
+#button{
+  letter-spacing: 0.03em;
+  color: $orangeColor;
+  cursor: pointer;
+  &:hover{
+    background-color: $orangeColor;
+    color: $whiteColor;
+    transition: .3s ease-in-out;
   }
 }

@@ -18,33 +18,76 @@ export default function MatoaProducts(props) {
         selected={selected}
         SelectTab={SelectTab}
       >
-        <Tab isSelected={selected === "Maple Series"}>
-          {data.map((prod, id) => (
-            <div key={id} style={{ display: "flex" }}>
-              <img src={prod.image} alt="" />
-              <h6>{prod.title}</h6>
-              <h5>{prod.price}</h5>
-            </div>
-          ))}
-        </Tab>
-        <Tab isSelected={selected === "Ebony Series"}>
-          {data.reverse().map((prod, id) => (
-            <div key={id} style={{ display: "flex" }}>
-              <img src={prod.image} alt="" />
-              <h6>{prod.title}</h6>
-              <h5>{prod.price}</h5>
-            </div>
-          ))}
-        </Tab>
-        <Tab isSelected={selected === "Featured"}>
-          {data.map((prod, id) => (
-            <div key={id} style={{ display: "flex" }}>
-              <img src={prod.image} alt="" />
-              <h6>{prod.title}</h6>
-              <h5>{prod.price}</h5>
-            </div>
-          ))}
-        </Tab>
+        <>
+          <Tab isSelected={selected === "Maple Series"}>
+            {data.map((prod, id) => (
+              <div key={id} className="tab-container">
+                <div>
+                  <img src={prod.image} alt="" />
+                  <img
+                    src="/images/Rectangle.png"
+                    alt=""
+                    width="131"
+                    height="131"
+                  />
+                </div>
+
+                <div style={{ marginLeft: "24px" }}>
+                  <h6>{prod.title}</h6>
+                  <h5>{prod.price}</h5>
+                </div>
+              </div>
+            ))}
+          </Tab>
+          {/* <button>See More</button> */}
+        </>
+
+        <>
+          <Tab isSelected={selected === "Ebony Series"}>
+            {data.reverse().map((prod, id) => (
+              <div key={id} className="tab-container">
+                <div>
+                  <img src={prod.image} alt="" />
+                  <img
+                    src="/images/Rectangle.png"
+                    alt=""
+                    width="131"
+                    height="131"
+                  />
+                </div>
+
+                <div style={{ marginLeft: "24px" }}>
+                  <h6>{prod.title}</h6>
+                  <h5>{prod.price}</h5>
+                </div>
+              </div>
+            ))}
+          </Tab>
+        </>
+
+        <>
+          <Tab isSelected={selected === "Featured"}>
+            {data.reverse().map((prod, id) => (
+              <div key={id} className="tab-container">
+                <div>
+                  <img src={prod.image} alt="" />
+                  <img
+                    src="/images/Rectangle.png"
+                    alt=""
+                    width="131"
+                    height="131"
+                  />
+                </div>
+
+                <div style={{ marginLeft: "24px" }}>
+                  <h6>{prod.title}</h6>
+                  <h5>{prod.price}</h5>
+                </div>
+              </div>
+            ))}
+          </Tab>
+          <button className="btn">See More</button>
+        </>
       </TabNav>
     </div>
   );

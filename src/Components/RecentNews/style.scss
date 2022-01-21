@@ -6,9 +6,7 @@
   flex-wrap: wrap;
   margin-bottom: 92px;
 
-
   .left-news{
-
     & > h6{
       letter-spacing: 0.02em;
       color: $greyColor;
@@ -25,19 +23,11 @@
 
     & > button{
       margin-top: 45px;
-      color: $orangeColor;
       border: 2px solid $orangeColor;
       width: 160px;
       height: 58px;
       font-size: 16px;
-      letter-spacing: 0.02em;
-
-      &:hover{
-        color: $whiteColor;
-        background-color: $orangeColor;
-        transition: .3s ease-in-out;
-        cursor: pointer;
-      }
+      @extend #button;
     }
   }
 
