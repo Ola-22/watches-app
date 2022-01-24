@@ -12,7 +12,7 @@ export default function MatoaProducts(props) {
   };
 
   return (
-    <div className="main-tab">
+    <div className="main-tab" style={{ marginBottom: "92px" }}>
       <TabNav
         tabs={["Maple Series", "Ebony Series", "Featured"]}
         selected={selected}
