@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import "./style.css";
 import SliderContent from "./SliderContent";
+import Vector from "../Vector";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -59,6 +60,7 @@ export default function SliderTop() {
   };
   return (
     <div className="slider-main">
+      <Vector />
       <Slider {...settings}>
         <div>
           <img className="slide" src="/images/slide1.png" alt="" />

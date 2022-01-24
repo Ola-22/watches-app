@@ -1,0 +1,18 @@
+.vector-main {
+  position: absolute;
+}
+
+.vector-main > img:first-of-type {
+  margin-top: -1em;
+}
+
+.vector-main > img:nth-of-type(2) {
+  margin-top: -8.5em;
+  margin-left: 8px;
+}
+
+.vector-main > img:nth-of-type(3) {
+  margin-top: -9em;
+  margin-left: 15px;
+}
+/*# sourceMappingURL=style.css.map */
