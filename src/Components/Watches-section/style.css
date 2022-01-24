@@ -11,7 +11,7 @@
           align-items: center;
 }
 
-#title-section {
+.title-section {
   font-size: 36px;
   font-weight: 500;
   color: #333333;
@@ -20,7 +20,7 @@
   margin-left: 64px;
 }
 
-#title-section:after {
+.title-section:after {
   content: '';
   border-bottom: 1px solid #333333;
   width: 120px;
@@ -35,7 +35,7 @@
 
 #button:hover {
   background-color: #D84727;
-  color: white;
+  color: #ffffff;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
