@@ -6,7 +6,7 @@ import "./style.css";
 
 const len = SliderContent.length - 1;
 
-export default function Testimonials(props) {
+export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -17,16 +17,18 @@ export default function Testimonials(props) {
   }, [activeIndex]);
 
   return (
-    <div className="slider-container">
-      <Slider activeIndex={activeIndex} SliderContent={SliderContent} />
-      <Arrows
-        prevSlide={() =>
-          setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
-        }
-        nextSlide={() =>
-          setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
-        }
-      />
-    </div>
+    <>
+      <div className="slider-container">
+        <Slider activeIndex={activeIndex} SliderContent={SliderContent} />
+        <Arrows
+          prevSlide={() =>
+            setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
+          }
+          nextSlide={() =>
+            setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
+          }
+        />
+      </div>
+    </>
   );
 }
