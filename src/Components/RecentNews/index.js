@@ -1,4 +1,5 @@
 import "./style.css";
+import Vector from "../Vector";
 
 export default function RecentNews() {
   return (
@@ -11,6 +12,7 @@ export default function RecentNews() {
           <button>Discover</button>
         </div>
         <div className="right-news">
+          <Vector />
           <img src="/images/recentNews.png" alt="" />
           <img src="/images/Rectangle.png" alt="" />
         </div>
