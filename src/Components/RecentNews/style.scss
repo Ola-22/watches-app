@@ -1,10 +1,13 @@
 @import "../../styles/variables";
+@import "../../styles/main";
+
 
 .recent-news{
   display: flex;
   margin-left: 64px;
   flex-wrap: wrap;
   margin-bottom: 92px;
+  position: relative;
 
   .left-news{
     & > h6{
@@ -35,8 +38,12 @@
   .right-news{
     display: flex;
     position: relative;
-    z-index: 1;
     margin-left: 75px;
+    z-index: 5;
+
+    & > img:first-of-type{
+      z-index: 11;
+    }
 
     & > img:last-of-type{
       position: absolute;
@@ -44,5 +51,12 @@
       z-index: -1;
       bottom: 69px;
     }
+
+    .vector-main{
+      left: 9em;
+      top: -3em;
+      transform: rotate(10deg);
+    }
   }
+
 }

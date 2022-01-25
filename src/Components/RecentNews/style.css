@@ -1,3 +1,45 @@
+.flexBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-section {
+  font-size: 36px;
+  font-weight: 500;
+  color: #333333;
+  letter-spacing: 0.02em;
+  margin-bottom: 68px;
+  margin-left: 64px;
+}
+
+.title-section:after {
+  content: '';
+  border-bottom: 1px solid #333333;
+  width: 120px;
+  display: block;
+}
+
+#button, .recent-news .left-news > button {
+  letter-spacing: 0.03em;
+  color: #D84727;
+  cursor: pointer;
+}
+
+#button:hover, .recent-news .left-news > button:hover {
+  background-color: #D84727;
+  color: #ffffff;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
 .recent-news {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6,6 +48,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 92px;
+  position: relative;
 }
 
 .recent-news .left-news > h6 {
@@ -24,20 +67,10 @@
 
 .recent-news .left-news > button {
   margin-top: 45px;
-  color: #D84727;
   border: 2px solid #D84727;
   width: 160px;
   height: 58px;
   font-size: 16px;
-  letter-spacing: 0.02em;
-}
-
-.recent-news .left-news > button:hover {
-  color: #ffffff;
-  background-color: #D84727;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  cursor: pointer;
 }
 
 .recent-news .right-news {
@@ -45,8 +78,12 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  z-index: 1;
   margin-left: 75px;
+  z-index: 5;
+}
+
+.recent-news .right-news > img:first-of-type {
+  z-index: 11;
 }
 
 .recent-news .right-news > img:last-of-type {
@@ -54,5 +91,12 @@
   left: 220px;
   z-index: -1;
   bottom: 69px;
+}
+
+.recent-news .right-news .vector-main {
+  left: 9em;
+  top: -3em;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 /*# sourceMappingURL=style.css.map */
