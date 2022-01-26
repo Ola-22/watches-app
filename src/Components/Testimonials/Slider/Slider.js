@@ -7,9 +7,9 @@ export default function Slider({ activeIndex, SliderContent }) {
           className={index === activeIndex ? "slides active" : "inactive"}
         >
           <div>
-            <img src="/images/Rectangle.png" alt="" />
+            <img src="/images/Rectangle.png" alt="" style={{ zIndex: "1" }} />
 
-            <img src={slide.img} alt="" />
+            <img src={slide.img} alt="" style={{ zIndex: "5" }} />
           </div>
 
           <div>

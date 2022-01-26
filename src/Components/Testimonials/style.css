@@ -40,6 +40,10 @@
   transition: .3s ease-in-out;
 }
 
+.slider-container {
+  position: relative;
+}
+
 .slider-container .slides {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -96,6 +100,14 @@
   width: 64px;
   height: 64px;
   cursor: pointer;
+}
+
+.slider-container .vector-main {
+  z-index: 2;
+  top: -3.3em;
+  left: -2em;
+  overflow: hidden;
+  width: 30em;
 }
 
 .active {

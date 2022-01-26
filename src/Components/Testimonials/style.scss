@@ -2,6 +2,7 @@
 @import "../../styles/main";
 
 .slider-container{
+  position: relative;
   .slides{
     @extend .flexBox;
     justify-content: space-between;
@@ -47,6 +48,14 @@
       height: 64px;
       cursor: pointer;
     }
+  }
+
+  .vector-main{
+    z-index: 2;
+    top: -3.3em;
+    left: -2em;
+    overflow: hidden;
+    width: 30em;
   }
 }
 
