@@ -3,6 +3,7 @@ import Slider from "./Slider/Slider";
 import SliderContent from "./Slider/SliderContent";
 import Arrows from "./Slider/Arrows";
 import "./style.css";
+import Vector from "../Vector";
 
 const len = SliderContent.length - 1;
 
@@ -19,6 +20,7 @@ export default function Testimonials() {
   return (
     <>
       <div className="slider-container">
+        <Vector />
         <Slider activeIndex={activeIndex} SliderContent={SliderContent} />
         <Arrows
           prevSlide={() =>
