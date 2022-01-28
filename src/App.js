@@ -6,6 +6,7 @@ import MonthlyDeals from "./Components/MonthlyDeals";
 import RecentNews from "./Components/RecentNews";
 import MatoaProducts from "./Components/MatoaProducts";
 import Testimonials from "./Components/Testimonials";
+import InstaSection from "./Components/InstaSection";
 import "./styles/main.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <RecentNews />
       <MatoaProducts />
       <Testimonials />
+      <InstaSection />
     </div>
   );
 }
