@@ -1,0 +1,13 @@
+@import "../../styles/variables";
+
+.footer{
+  margin-top: 75px;
+  .footer-top{
+    background-color: $footerColor;
+    & > div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    }
+  }
+}
