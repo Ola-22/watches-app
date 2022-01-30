@@ -1,0 +1,19 @@
+.footer {
+  margin-top: 75px;
+}
+
+.footer .footer-top {
+  background-color: #DA5E42;
+}
+
+.footer .footer-top > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*# sourceMappingURL=style.css.map */
