@@ -7,6 +7,8 @@ import RecentNews from "./Components/RecentNews";
 import MatoaProducts from "./Components/MatoaProducts";
 import Testimonials from "./Components/Testimonials";
 import InstaSection from "./Components/InstaSection";
+import Footer from "./Components/Footer";
+
 import "./styles/main.css";
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
       <MatoaProducts />
       <Testimonials />
       <InstaSection />
+      <Footer />
     </div>
   );
 }
