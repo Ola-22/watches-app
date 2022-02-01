@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <div className="nav-main">
       <>
-        <img src="/images/logo.png" alt="" />
+        <img src="/images/Logo.svg" alt="" />
       </>
       <nav className="menu-main">
         <a href="#">Watches</a>
