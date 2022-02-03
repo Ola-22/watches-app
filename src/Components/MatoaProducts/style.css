@@ -54,7 +54,7 @@
   margin-right: 120px;
 }
 
-.nav-tabs > li > a {
+.nav-tabs > li > div {
   font-size: 36px;
   letter-spacing: 0.02em;
   color: #333333;
@@ -63,7 +63,7 @@
   cursor: pointer;
 }
 
-.nav-tabs > li > a:after {
+.nav-tabs > li > div:after {
   content: '';
   border-bottom: 1px solid #333333;
   width: 62px;
