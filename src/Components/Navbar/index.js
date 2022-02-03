@@ -7,10 +7,10 @@ export default function Navbar() {
         <img src="/images/Logo.svg" alt="" />
       </>
       <nav className="menu-main">
-        <a href="#">Watches</a>
-        <a href="#">Eyewear</a>
-        <a href="#">Accessories</a>
-        <a href="#">News</a>
+        <a href="/">Watches</a>
+        <a href="/">Eyewear</a>
+        <a href="/">Accessories</a>
+        <a href="/">News</a>
       </nav>
       <div className="nav-box">
         <img src="/images/search.png" alt="" />
