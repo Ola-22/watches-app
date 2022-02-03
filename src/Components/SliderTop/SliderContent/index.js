@@ -1,11 +1,11 @@
 import "./style.css";
 
-export default function SliderContent({ title, paragraph }) {
+function SliderContent({ title, paragraph }) {
   return (
     <div className="content-main">
       <h1>{title}</h1>
       <p>{paragraph}</p>
-      <a href="#">Discover</a>
+      <a href="/">Discover</a>
       <div>
         <button>
           <img src="/images/add-cart.png" alt="" />
@@ -18,3 +18,5 @@ export default function SliderContent({ title, paragraph }) {
     </div>
   );
 }
+
+export default SliderContent;
