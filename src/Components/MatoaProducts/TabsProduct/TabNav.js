@@ -8,16 +8,15 @@ export default function TabNav(props) {
           const active = tab === props.selected ? "active" : "";
           return (
             <li className="nav-item" key={tab}>
-              <a
+              <div
                 className={"tab-link" + active}
                 onClick={() => props.SelectTab(tab)}
               >
                 {tab}
-              </a>
+              </div>
             </li>
           );
         })}
-        {console.log(props.tabs)}
       </div>
       {props.children}
     </div>
