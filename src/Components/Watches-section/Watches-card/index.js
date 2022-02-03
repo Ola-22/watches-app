@@ -3,7 +3,7 @@ export default function WatchesCard({ title, paragraph, discover, src }) {
     <div>
       <h4>{title}</h4>
       <p>{paragraph}</p>
-      <a href="#">{discover}</a>
+      <a href="/">{discover}</a>
 
       <img src={src} alt="" />
     </div>
