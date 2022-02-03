@@ -1,3 +1,45 @@
+.flexBox, .footer .footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-section {
+  font-size: 36px;
+  font-weight: 500;
+  color: #333333;
+  letter-spacing: 0.02em;
+  margin-bottom: 68px;
+  margin-left: 64px;
+}
+
+.title-section:after {
+  content: '';
+  border-bottom: 1px solid #333333;
+  width: 120px;
+  display: block;
+}
+
+#button {
+  letter-spacing: 0.03em;
+  color: #D84727;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: #D84727;
+  color: #ffffff;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
 .footer {
   margin-top: 75px;
 }
@@ -18,10 +60,66 @@
 }
 
 .footer .footer-bottom {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background-color: #D84727;
+  border-top: 1px solid #D84727;
+  color: #ffffff;
+  padding: 51px 0 75px;
+}
+
+.footer .footer-bottom > div:first-of-type h3 {
+  margin-top: 27px;
+  width: 117px;
+}
+
+.footer .footer-bottom > div:first-of-type h4 {
+  width: 255px;
+}
+
+.footer .footer-bottom > div:first-of-type h4:last-of-type {
+  width: 139px;
+}
+
+.footer .footer-bottom > div:nth-of-type(2) div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer .footer-bottom > div:nth-of-type(2) div:nth-of-type(4) {
+  -webkit-box-align: self-start;
+      -ms-flex-align: self-start;
+          align-items: self-start;
+  margin-top: 24px;
+}
+
+.footer .footer-bottom h2 {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer .footer-bottom h2:after {
+  content: '';
+  border-bottom: 1px solid #ffffff;
+  width: 60px;
+  display: block;
+}
+
+.footer .footer-bottom h3 {
+  font-size: 20px;
+  font-weight: 500;
+  width: 97px;
+}
+
+.footer .footer-bottom h4 {
+  font-weight: normal;
 }
 /*# sourceMappingURL=style.css.map */
